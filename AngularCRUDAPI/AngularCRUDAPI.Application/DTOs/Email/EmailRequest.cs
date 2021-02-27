@@ -1,5 +1,5 @@
 ﻿
-namespace AngularCRUDAPI.Application.DTOs.Email
+namespace AngularCrudApi.Application.DTOs.Email
 {
     public class EmailRequest
     {

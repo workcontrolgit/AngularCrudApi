@@ -1,5 +1,5 @@
-﻿using AngularCRUDAPI.Application.Interfaces;
-using AngularCRUDAPI.Infrastructure.Persistence.Contexts;
+﻿using AngularCrudApi.Application.Interfaces;
+using AngularCrudApi.Infrastructure.Persistence.Contexts;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Linq.Dynamic.Core;
 using System.Threading.Tasks;
 
-namespace AngularCRUDAPI.Infrastructure.Persistence.Repository
+namespace AngularCrudApi.Infrastructure.Persistence.Repository
 {
     public class GenericRepositoryAsync<T> : IGenericRepositoryAsync<T> where T : class
     {

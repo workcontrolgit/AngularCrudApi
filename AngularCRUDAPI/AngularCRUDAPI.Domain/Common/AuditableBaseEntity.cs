@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AngularCRUDAPI.Domain.Common
+namespace AngularCrudApi.Domain.Common
 {
     public abstract class AuditableBaseEntity : BaseEntity
     {

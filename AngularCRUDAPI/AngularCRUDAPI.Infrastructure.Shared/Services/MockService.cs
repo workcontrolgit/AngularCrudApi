@@ -1,9 +1,9 @@
-﻿using AngularCRUDAPI.Application.Interfaces;
-using AngularCRUDAPI.Domain.Entities;
-using AngularCRUDAPI.Infrastructure.Shared.Mock;
+﻿using AngularCrudApi.Application.Interfaces;
+using AngularCrudApi.Domain.Entities;
+using AngularCrudApi.Infrastructure.Shared.Mock;
 using System.Collections.Generic;
 
-namespace AngularCRUDAPI.Infrastructure.Shared.Services
+namespace AngularCrudApi.Infrastructure.Shared.Services
 {
     public class MockService : IMockService
     {

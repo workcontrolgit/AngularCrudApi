@@ -1,10 +1,10 @@
-﻿using AngularCRUDAPI.Application.Interfaces;
-using AngularCRUDAPI.Domain.Settings;
-using AngularCRUDAPI.Infrastructure.Shared.Services;
+﻿using AngularCrudApi.Application.Interfaces;
+using AngularCrudApi.Domain.Settings;
+using AngularCrudApi.Infrastructure.Shared.Services;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace AngularCRUDAPI.Infrastructure.Shared
+namespace AngularCrudApi.Infrastructure.Shared
 {
     public static class ServiceRegistration
     {

@@ -1,10 +1,10 @@
-﻿using AngularCRUDAPI.Domain.Entities;
-using AngularCRUDAPI.Domain.Enums;
+﻿using AngularCrudApi.Domain.Entities;
+using AngularCrudApi.Domain.Enums;
 using AutoBogus;
 using Bogus;
 using System;
 
-namespace AngularCRUDAPI.Infrastructure.Shared.Mock
+namespace AngularCrudApi.Infrastructure.Shared.Mock
 {
     public class EmployeeBogusConfig : AutoFaker<Employee>
     {

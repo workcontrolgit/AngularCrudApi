@@ -1,10 +1,10 @@
-﻿using AngularCRUDAPI.Application.Features.Employees.Queries.GetEmployees;
-using AngularCRUDAPI.Application.Features.Positions.Commands.CreatePosition;
-using AngularCRUDAPI.Application.Features.Positions.Queries.GetPositions;
-using AngularCRUDAPI.Domain.Entities;
+﻿using AngularCrudApi.Application.Features.Employees.Queries.GetEmployees;
+using AngularCrudApi.Application.Features.Positions.Commands.CreatePosition;
+using AngularCrudApi.Application.Features.Positions.Queries.GetPositions;
+using AngularCrudApi.Domain.Entities;
 using AutoMapper;
 
-namespace AngularCRUDAPI.Application.Mappings
+namespace AngularCrudApi.Application.Mappings
 {
     public class GeneralProfile : Profile
     {

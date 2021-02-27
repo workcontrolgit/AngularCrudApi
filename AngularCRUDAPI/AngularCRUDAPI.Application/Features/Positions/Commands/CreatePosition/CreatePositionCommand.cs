@@ -1,13 +1,13 @@
-﻿using AngularCRUDAPI.Application.Interfaces.Repositories;
-using AngularCRUDAPI.Application.Wrappers;
-using AngularCRUDAPI.Domain.Entities;
+﻿using AngularCrudApi.Application.Interfaces.Repositories;
+using AngularCrudApi.Application.Wrappers;
+using AngularCrudApi.Domain.Entities;
 using AutoMapper;
 using MediatR;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace AngularCRUDAPI.Application.Features.Positions.Commands.CreatePosition
+namespace AngularCrudApi.Application.Features.Positions.Commands.CreatePosition
 {
     public partial class CreatePositionCommand : IRequest<Response<Guid>>
     {

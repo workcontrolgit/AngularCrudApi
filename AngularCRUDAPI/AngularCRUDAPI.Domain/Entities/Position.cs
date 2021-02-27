@@ -1,6 +1,6 @@
-﻿using AngularCRUDAPI.Domain.Common;
+﻿using AngularCrudApi.Domain.Common;
 
-namespace AngularCRUDAPI.Domain.Entities
+namespace AngularCrudApi.Domain.Entities
 {
     public class Position : AuditableBaseEntity
     {

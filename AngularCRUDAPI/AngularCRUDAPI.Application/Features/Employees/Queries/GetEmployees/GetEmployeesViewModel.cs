@@ -1,7 +1,7 @@
-﻿using AngularCRUDAPI.Domain.Enums;
+﻿using AngularCrudApi.Domain.Enums;
 using System;
 
-namespace AngularCRUDAPI.Application.Features.Employees.Queries.GetEmployees
+namespace AngularCrudApi.Application.Features.Employees.Queries.GetEmployees
 {
     public class GetEmployeesViewModel
     {

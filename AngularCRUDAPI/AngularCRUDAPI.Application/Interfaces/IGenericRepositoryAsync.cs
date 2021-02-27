@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace AngularCRUDAPI.Application.Interfaces
+namespace AngularCrudApi.Application.Interfaces
 {
     public interface IGenericRepositoryAsync<T> where T : class
     {

@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace AngularCRUDAPI.Application.Exceptions
+namespace AngularCrudApi.Application.Exceptions
 {
     public class ValidationException : Exception
     {

@@ -1,7 +1,7 @@
-﻿using AngularCRUDAPI.Application.DTOs.Email;
-using AngularCRUDAPI.Application.Exceptions;
-using AngularCRUDAPI.Application.Interfaces;
-using AngularCRUDAPI.Domain.Settings;
+﻿using AngularCrudApi.Application.DTOs.Email;
+using AngularCrudApi.Application.Exceptions;
+using AngularCrudApi.Application.Interfaces;
+using AngularCrudApi.Domain.Settings;
 using MailKit.Net.Smtp;
 using MailKit.Security;
 using Microsoft.Extensions.Logging;
@@ -9,7 +9,7 @@ using Microsoft.Extensions.Options;
 using MimeKit;
 using System.Threading.Tasks;
 
-namespace AngularCRUDAPI.Infrastructure.Shared.Services
+namespace AngularCrudApi.Infrastructure.Shared.Services
 {
     public class EmailService : IEmailService
     {

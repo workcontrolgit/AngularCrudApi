@@ -6,7 +6,7 @@ using Microsoft.Extensions.Logging;
 using Serilog;
 using System;
 
-namespace AngularCRUDAPI.WebApi
+namespace AngularCrudApi.WebApi
 {
     public static class Program
     {

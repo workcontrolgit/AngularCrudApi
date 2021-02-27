@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AngularCRUDAPI.Application.Features.Positions.Queries.GetPositions
+namespace AngularCrudApi.Application.Features.Positions.Queries.GetPositions
 {
     public class GetPositionsViewModel
     {

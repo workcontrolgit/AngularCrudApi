@@ -1,13 +1,13 @@
-﻿using AngularCRUDAPI.Application.Interfaces;
-using AngularCRUDAPI.Domain.Common;
-using AngularCRUDAPI.Domain.Entities;
+﻿using AngularCrudApi.Application.Interfaces;
+using AngularCrudApi.Domain.Common;
+using AngularCrudApi.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.Extensions.Logging;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace AngularCRUDAPI.Infrastructure.Persistence.Contexts
+namespace AngularCrudApi.Infrastructure.Persistence.Contexts
 {
     public class ApplicationDbContext : DbContext
     {

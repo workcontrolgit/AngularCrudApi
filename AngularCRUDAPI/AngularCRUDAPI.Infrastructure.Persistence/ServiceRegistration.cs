@@ -1,13 +1,13 @@
-﻿using AngularCRUDAPI.Application.Interfaces;
-using AngularCRUDAPI.Application.Interfaces.Repositories;
-using AngularCRUDAPI.Infrastructure.Persistence.Contexts;
-using AngularCRUDAPI.Infrastructure.Persistence.Repositories;
-using AngularCRUDAPI.Infrastructure.Persistence.Repository;
+﻿using AngularCrudApi.Application.Interfaces;
+using AngularCrudApi.Application.Interfaces.Repositories;
+using AngularCrudApi.Infrastructure.Persistence.Contexts;
+using AngularCrudApi.Infrastructure.Persistence.Repositories;
+using AngularCrudApi.Infrastructure.Persistence.Repository;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace AngularCRUDAPI.Infrastructure.Persistence
+namespace AngularCrudApi.Infrastructure.Persistence
 {
     public static class ServiceRegistration
     {

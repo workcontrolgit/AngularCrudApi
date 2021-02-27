@@ -1,7 +1,7 @@
-﻿using AngularCRUDAPI.Application.Interfaces;
+﻿using AngularCrudApi.Application.Interfaces;
 using System;
 
-namespace AngularCRUDAPI.Infrastructure.Shared.Services
+namespace AngularCrudApi.Infrastructure.Shared.Services
 {
     public class DateTimeService : IDateTimeService
     {

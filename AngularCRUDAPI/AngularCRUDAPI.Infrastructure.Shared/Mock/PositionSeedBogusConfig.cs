@@ -1,9 +1,9 @@
-﻿using AngularCRUDAPI.Domain.Entities;
+﻿using AngularCrudApi.Domain.Entities;
 using AutoBogus;
 using Bogus;
 using System;
 
-namespace AngularCRUDAPI.Infrastructure.Shared.Mock
+namespace AngularCrudApi.Infrastructure.Shared.Mock
 {
     public class PositionSeedBogusConfig : AutoFaker<Position>
     {

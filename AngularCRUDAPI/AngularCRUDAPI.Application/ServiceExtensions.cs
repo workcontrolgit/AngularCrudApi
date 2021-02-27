@@ -1,14 +1,14 @@
-﻿using AngularCRUDAPI.Application.Behaviours;
-using AngularCRUDAPI.Application.Helpers;
-using AngularCRUDAPI.Application.Interfaces;
-using AngularCRUDAPI.Domain.Entities;
+﻿using AngularCrudApi.Application.Behaviours;
+using AngularCrudApi.Application.Helpers;
+using AngularCrudApi.Application.Interfaces;
+using AngularCrudApi.Domain.Entities;
 using AutoMapper;
 using FluentValidation;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 
-namespace AngularCRUDAPI.Application
+namespace AngularCrudApi.Application
 {
     public static class ServiceExtensions
     {

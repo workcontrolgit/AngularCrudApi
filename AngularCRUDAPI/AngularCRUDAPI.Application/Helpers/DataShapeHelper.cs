@@ -1,12 +1,12 @@
-﻿using AngularCRUDAPI.Application.Interfaces;
-using AngularCRUDAPI.Domain.Entities;
+﻿using AngularCrudApi.Application.Interfaces;
+using AngularCrudApi.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
 
-namespace AngularCRUDAPI.Application.Helpers
+namespace AngularCrudApi.Application.Helpers
 {
     public class DataShapeHelper<T> : IDataShapeHelper<T>
     {

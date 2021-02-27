@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Globalization;
 
-namespace AngularCRUDAPI.Application.Exceptions
+namespace AngularCrudApi.Application.Exceptions
 {
     public class ApiException : Exception
     {

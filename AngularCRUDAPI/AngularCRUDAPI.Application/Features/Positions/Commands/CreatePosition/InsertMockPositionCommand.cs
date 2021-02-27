@@ -1,10 +1,10 @@
-﻿using AngularCRUDAPI.Application.Interfaces.Repositories;
-using AngularCRUDAPI.Application.Wrappers;
+﻿using AngularCrudApi.Application.Interfaces.Repositories;
+using AngularCrudApi.Application.Wrappers;
 using MediatR;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace AngularCRUDAPI.Application.Features.Positions.Commands.CreatePosition
+namespace AngularCrudApi.Application.Features.Positions.Commands.CreatePosition
 {
     public partial class InsertMockPositionCommand : IRequest<Response<int>>
     {

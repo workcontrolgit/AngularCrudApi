@@ -1,8 +1,8 @@
-﻿using AngularCRUDAPI.Application.Interfaces;
+﻿using AngularCrudApi.Application.Interfaces;
 using System;
 using System.Linq;
 
-namespace AngularCRUDAPI.Application.Helpers
+namespace AngularCrudApi.Application.Helpers
 {
     public class ModelHelper : IModelHelper
     {

@@ -1,8 +1,8 @@
-﻿using AngularCRUDAPI.Application.Features.Positions.Commands.CreatePosition;
-using AngularCRUDAPI.Application.Features.Positions.Commands.DeletePositionById;
-using AngularCRUDAPI.Application.Features.Positions.Commands.UpdatePosition;
-using AngularCRUDAPI.Application.Features.Positions.Queries.GetPositionById;
-using AngularCRUDAPI.Application.Features.Positions.Queries.GetPositions;
+﻿using AngularCrudApi.Application.Features.Positions.Commands.CreatePosition;
+using AngularCrudApi.Application.Features.Positions.Commands.DeletePositionById;
+using AngularCrudApi.Application.Features.Positions.Commands.UpdatePosition;
+using AngularCrudApi.Application.Features.Positions.Queries.GetPositionById;
+using AngularCrudApi.Application.Features.Positions.Queries.GetPositions;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace AngularCRUDAPI.WebApi.Controllers.v1
+namespace AngularCrudApi.WebApi.Controllers.v1
 {
     [ApiVersion("1.0")]
     public class PositionsController : BaseApiController
@@ -60,6 +60,19 @@ namespace AngularCRUDAPI.WebApi.Controllers.v1
         public async Task<IActionResult> AddMock(InsertMockPositionCommand command)
         {
             return Ok(await Mediator.Send(command));
+        }
+
+        /// <summary>
+        /// Support Angular 11 CRUD story on Medium
+        /// </summary>
+        /// <param name="query"></param>
+        /// <returns></returns>
+        [HttpPost]
+        [Route("Paged")]
+        // [Authorize]
+        public async Task<IActionResult> Paged(PagedPositionsQuery query)
+        {
+            return Ok(await Mediator.Send(query));
         }
 
 
