@@ -46,9 +46,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AngularCRUDAPI.Application\AngularCRUDAPI.Application.csproj" />
-    <ProjectReference Include="..\AngularCRUDAPI.Infrastructure.Persistence\AngularCRUDAPI.Infrastructure.Persistence.csproj" />
-    <ProjectReference Include="..\AngularCRUDAPI.Infrastructure.Shared\AngularCRUDAPI.Infrastructure.Shared.csproj" />
+    <ProjectReference Include="..\AngularCRUDAPI.Application\AngularCrudApi.Application.csproj" />
+    <ProjectReference Include="..\AngularCRUDAPI.Infrastructure.Persistence\AngularCrudApi.Infrastructure.Persistence.csproj" />
+    <ProjectReference Include="..\AngularCRUDAPI.Infrastructure.Shared\AngularCrudApi.Infrastructure.Shared.csproj" />
   </ItemGroup>
 
 </Project>

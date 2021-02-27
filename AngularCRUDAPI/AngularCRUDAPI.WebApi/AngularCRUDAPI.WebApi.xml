@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <doc>
     <assembly>
-        <name>AngularCRUDAPI.WebApi</name>
+        <name>AngularCrudApi.WebApi</name>
     </assembly>
     <members>
         <member name="M:AngularCRUDAPI.WebApi.Controllers.v1.EmployeesController.Get(AngularCRUDAPI.Application.Features.Employees.Queries.GetEmployees.GetEmployeesQuery)">
