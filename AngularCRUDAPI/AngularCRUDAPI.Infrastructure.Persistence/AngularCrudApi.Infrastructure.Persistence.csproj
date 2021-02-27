@@ -15,8 +15,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AngularCrudApi.Application\AngularCrudApi.Application.csproj" />
-    <ProjectReference Include="..\AngularCrudApi.Domain\AngularCrudApi.Domain.csproj" />
+    <ProjectReference Include="..\AngularCRUDAPI.Application\AngularCrudApi.Application.csproj" />
+    <ProjectReference Include="..\AngularCRUDAPI.Domain\AngularCrudApi.Domain.csproj" />
   </ItemGroup>
 
 </Project>
