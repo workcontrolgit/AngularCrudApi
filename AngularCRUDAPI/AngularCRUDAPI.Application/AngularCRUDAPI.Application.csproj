@@ -15,7 +15,7 @@
     <PackageReference Include="System.Text.Json" Version="5.0.1" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AngularCRUDAPI.Domain\AngularCRUDAPI.Domain.csproj" />
+    <ProjectReference Include="..\AngularCRUDAPI.Domain\AngularCrudApi.Domain.csproj" />
   </ItemGroup>
 
 </Project>
