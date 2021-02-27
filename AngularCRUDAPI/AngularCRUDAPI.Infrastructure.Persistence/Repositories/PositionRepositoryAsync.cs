@@ -1,10 +1,10 @@
-﻿using AngularCRUDAPI.Application.Features.Positions.Queries.GetPositions;
-using AngularCRUDAPI.Application.Interfaces;
-using AngularCRUDAPI.Application.Interfaces.Repositories;
-using AngularCRUDAPI.Application.Parameters;
-using AngularCRUDAPI.Domain.Entities;
-using AngularCRUDAPI.Infrastructure.Persistence.Contexts;
-using AngularCRUDAPI.Infrastructure.Persistence.Repository;
+﻿using AngularCrudApi.Application.Features.Positions.Queries.GetPositions;
+using AngularCrudApi.Application.Interfaces;
+using AngularCrudApi.Application.Interfaces.Repositories;
+using AngularCrudApi.Application.Parameters;
+using AngularCrudApi.Domain.Entities;
+using AngularCrudApi.Infrastructure.Persistence.Contexts;
+using AngularCrudApi.Infrastructure.Persistence.Repository;
 using LinqKit;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
@@ -12,7 +12,7 @@ using System.Linq;
 using System.Linq.Dynamic.Core;
 using System.Threading.Tasks;
 
-namespace AngularCRUDAPI.Infrastructure.Persistence.Repositories
+namespace AngularCrudApi.Infrastructure.Persistence.Repositories
 {
     public class PositionRepositoryAsync : GenericRepositoryAsync<Position>, IPositionRepositoryAsync
     {

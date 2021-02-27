@@ -1,5 +1,5 @@
-﻿using AngularCRUDAPI.Application.Exceptions;
-using AngularCRUDAPI.Application.Wrappers;
+﻿using AngularCrudApi.Application.Exceptions;
+using AngularCrudApi.Application.Wrappers;
 using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
@@ -7,7 +7,7 @@ using System.Net;
 using System.Text.Json;
 using System.Threading.Tasks;
 
-namespace AngularCRUDAPI.WebApi.Middlewares
+namespace AngularCrudApi.WebApi.Middlewares
 {
     public class ErrorHandlerMiddleware
     {

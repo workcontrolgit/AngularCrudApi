@@ -1,7 +1,7 @@
-﻿using AngularCRUDAPI.WebApi.Middlewares;
+﻿using AngularCrudApi.WebApi.Middlewares;
 using Microsoft.AspNetCore.Builder;
 
-namespace AngularCRUDAPI.WebApi.Extensions
+namespace AngularCrudApi.WebApi.Extensions
 {
     public static class AppExtensions
     {
@@ -10,7 +10,7 @@ namespace AngularCRUDAPI.WebApi.Extensions
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "CleanArchitecture.AngularCRUDAPI.WebApi");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "CleanArchitecture.AngularCrudApi.WebApi");
             });
         }
         public static void UseErrorHandlingMiddleware(this IApplicationBuilder app)

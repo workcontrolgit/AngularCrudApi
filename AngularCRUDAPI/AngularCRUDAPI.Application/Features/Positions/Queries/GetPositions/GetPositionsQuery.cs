@@ -1,15 +1,15 @@
-﻿using AngularCRUDAPI.Application.Interfaces;
-using AngularCRUDAPI.Application.Interfaces.Repositories;
-using AngularCRUDAPI.Application.Parameters;
-using AngularCRUDAPI.Application.Wrappers;
-using AngularCRUDAPI.Domain.Entities;
+﻿using AngularCrudApi.Application.Interfaces;
+using AngularCrudApi.Application.Interfaces.Repositories;
+using AngularCrudApi.Application.Parameters;
+using AngularCrudApi.Application.Wrappers;
+using AngularCrudApi.Domain.Entities;
 using AutoMapper;
 using MediatR;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace AngularCRUDAPI.Application.Features.Positions.Queries.GetPositions
+namespace AngularCrudApi.Application.Features.Positions.Queries.GetPositions
 {
     public class GetPositionsQuery : QueryParameter, IRequest<PagedResponse<IEnumerable<Entity>>>
     {

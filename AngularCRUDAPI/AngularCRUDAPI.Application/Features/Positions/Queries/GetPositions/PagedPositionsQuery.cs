@@ -1,15 +1,15 @@
-﻿using AngularNgxDataTableBackend.Application.Interfaces;
-using AngularNgxDataTableBackend.Application.Interfaces.Repositories;
-using AngularNgxDataTableBackend.Application.Parameters;
-using AngularNgxDataTableBackend.Application.Wrappers;
-using AngularNgxDataTableBackend.Domain.Entities;
+﻿using AngularCrudApi.Application.Interfaces;
+using AngularCrudApi.Application.Interfaces.Repositories;
+using AngularCrudApi.Application.Parameters;
+using AngularCrudApi.Application.Wrappers;
+using AngularCrudApi.Domain.Entities;
 using AutoMapper;
 using MediatR;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace AngularNgxDataTableBackend.Application.Features.Positions.Queries.GetPositions
+namespace AngularCrudApi.Application.Features.Positions.Queries.GetPositions
 {
     public partial class PagedPositionsQuery : IRequest<PagedDataTableResponse<IEnumerable<Entity>>>
     {

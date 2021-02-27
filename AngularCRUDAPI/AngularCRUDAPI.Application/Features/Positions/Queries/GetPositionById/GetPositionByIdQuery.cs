@@ -1,13 +1,13 @@
-﻿using AngularCRUDAPI.Application.Exceptions;
-using AngularCRUDAPI.Application.Interfaces.Repositories;
-using AngularCRUDAPI.Application.Wrappers;
-using AngularCRUDAPI.Domain.Entities;
+﻿using AngularCrudApi.Application.Exceptions;
+using AngularCrudApi.Application.Interfaces.Repositories;
+using AngularCrudApi.Application.Wrappers;
+using AngularCrudApi.Domain.Entities;
 using MediatR;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace AngularCRUDAPI.Application.Features.Positions.Queries.GetPositionById
+namespace AngularCrudApi.Application.Features.Positions.Queries.GetPositionById
 {
     public class GetPositionByIdQuery : IRequest<Response<Position>>
     {

@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
 
 
-namespace AngularCRUDAPI.WebApi.Controllers
+namespace AngularCrudApi.WebApi.Controllers
 {
     [ApiController]
     [Route("api/v{version:apiVersion}/[controller]")]

@@ -1,10 +1,10 @@
-﻿using AngularCRUDAPI.Application.Features.Employees.Queries.GetEmployees;
-using AngularCRUDAPI.Application.Parameters;
-using AngularCRUDAPI.Domain.Entities;
+﻿using AngularCrudApi.Application.Features.Employees.Queries.GetEmployees;
+using AngularCrudApi.Application.Parameters;
+using AngularCrudApi.Domain.Entities;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace AngularCRUDAPI.Application.Interfaces.Repositories
+namespace AngularCrudApi.Application.Interfaces.Repositories
 {
     public interface IEmployeeRepositoryAsync : IGenericRepositoryAsync<Employee>
     {

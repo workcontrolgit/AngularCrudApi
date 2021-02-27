@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace AngularCRUDAPI.WebApi.Controllers
+namespace AngularCrudApi.WebApi.Controllers
 {
     public class MetaController : BaseApiController
     {

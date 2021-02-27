@@ -1,5 +1,5 @@
 ﻿
-namespace AngularCRUDAPI.Application.Parameters
+namespace AngularCrudApi.Application.Parameters
 {
     public class RecordsCount
     {

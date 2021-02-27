@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AngularCRUDAPI.Application\AngularCrudApi.Application.csproj" />
+    <ProjectReference Include="..\AngularCrudApi.Application\AngularCrudApi.Application.csproj" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="AutoBogus" Version="2.12.0" />

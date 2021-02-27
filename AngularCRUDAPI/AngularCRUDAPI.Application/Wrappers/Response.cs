@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace AngularCRUDAPI.Application.Wrappers
+namespace AngularCrudApi.Application.Wrappers
 {
     public class Response<T>
     {

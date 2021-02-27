@@ -11,7 +11,7 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>AngularCRUDAPI.WebApi.xml</DocumentationFile>
+    <DocumentationFile>AngularCrudApi.WebApi.xml</DocumentationFile>
     <NoWarn>1701;1702;1591</NoWarn>
   </PropertyGroup>
 
@@ -46,9 +46,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AngularCRUDAPI.Application\AngularCrudApi.Application.csproj" />
-    <ProjectReference Include="..\AngularCRUDAPI.Infrastructure.Persistence\AngularCrudApi.Infrastructure.Persistence.csproj" />
-    <ProjectReference Include="..\AngularCRUDAPI.Infrastructure.Shared\AngularCrudApi.Infrastructure.Shared.csproj" />
+    <ProjectReference Include="..\AngularCrudApi.Application\AngularCrudApi.Application.csproj" />
+    <ProjectReference Include="..\AngularCrudApi.Infrastructure.Persistence\AngularCrudApi.Infrastructure.Persistence.csproj" />
+    <ProjectReference Include="..\AngularCrudApi.Infrastructure.Shared\AngularCrudApi.Infrastructure.Shared.csproj" />
   </ItemGroup>
 
 </Project>

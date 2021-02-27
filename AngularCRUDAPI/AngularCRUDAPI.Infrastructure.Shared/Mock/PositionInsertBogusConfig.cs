@@ -1,8 +1,8 @@
-﻿using AngularCRUDAPI.Domain.Entities;
+﻿using AngularCrudApi.Domain.Entities;
 using Bogus;
 
 
-namespace AngularCRUDAPI.Infrastructure.Shared.Mock
+namespace AngularCrudApi.Infrastructure.Shared.Mock
 {
     public class PositionInsertBogusConfig : Faker<Position>
     {

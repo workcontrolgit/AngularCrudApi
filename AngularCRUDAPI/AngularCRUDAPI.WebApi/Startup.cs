@@ -1,8 +1,8 @@
-using AngularCRUDAPI.Application;
-using AngularCRUDAPI.Infrastructure.Persistence;
-using AngularCRUDAPI.Infrastructure.Persistence.Contexts;
-using AngularCRUDAPI.Infrastructure.Shared;
-using AngularCRUDAPI.WebApi.Extensions;
+using AngularCrudApi.Application;
+using AngularCrudApi.Infrastructure.Persistence;
+using AngularCrudApi.Infrastructure.Persistence.Contexts;
+using AngularCrudApi.Infrastructure.Shared;
+using AngularCrudApi.WebApi.Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -12,7 +12,7 @@ using Microsoft.Extensions.Logging;
 using Serilog;
 
 
-namespace AngularCRUDAPI.WebApi
+namespace AngularCrudApi.WebApi
 {
     public class Startup
     {

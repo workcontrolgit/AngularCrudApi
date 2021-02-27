@@ -1,7 +1,7 @@
-﻿using AngularCRUDAPI.Application.DTOs.Email;
+﻿using AngularCrudApi.Application.DTOs.Email;
 using System.Threading.Tasks;
 
-namespace AngularCRUDAPI.Application.Interfaces
+namespace AngularCrudApi.Application.Interfaces
 {
     public interface IEmailService
     {

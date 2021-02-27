@@ -1,7 +1,7 @@
-﻿using AngularCRUDAPI.Domain.Enums;
+﻿using AngularCrudApi.Domain.Enums;
 using System;
 
-namespace AngularCRUDAPI.Domain.Entities
+namespace AngularCrudApi.Domain.Entities
 {
     public class Employee
     {

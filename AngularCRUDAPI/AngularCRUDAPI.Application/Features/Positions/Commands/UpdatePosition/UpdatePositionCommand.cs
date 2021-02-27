@@ -1,12 +1,12 @@
-﻿using AngularCRUDAPI.Application.Exceptions;
-using AngularCRUDAPI.Application.Interfaces.Repositories;
-using AngularCRUDAPI.Application.Wrappers;
+﻿using AngularCrudApi.Application.Exceptions;
+using AngularCrudApi.Application.Interfaces.Repositories;
+using AngularCrudApi.Application.Wrappers;
 using MediatR;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace AngularCRUDAPI.Application.Features.Positions.Commands.UpdatePosition
+namespace AngularCrudApi.Application.Features.Positions.Commands.UpdatePosition
 {
     public class UpdatePositionCommand : IRequest<Response<Guid>>
     {

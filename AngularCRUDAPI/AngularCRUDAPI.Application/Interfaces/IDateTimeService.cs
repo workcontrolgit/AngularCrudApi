@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AngularCRUDAPI.Application.Interfaces
+namespace AngularCrudApi.Application.Interfaces
 {
     public interface IDateTimeService
     {

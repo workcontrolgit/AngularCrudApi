@@ -1,5 +1,5 @@
 ﻿
-namespace AngularCRUDAPI.Application.Interfaces
+namespace AngularCrudApi.Application.Interfaces
 {
     public interface IModelHelper
     {

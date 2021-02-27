@@ -1,9 +1,9 @@
-﻿using AngularCRUDAPI.Application.Interfaces.Repositories;
+﻿using AngularCrudApi.Application.Interfaces.Repositories;
 using FluentValidation;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace AngularCRUDAPI.Application.Features.Positions.Commands.CreatePosition
+namespace AngularCrudApi.Application.Features.Positions.Commands.CreatePosition
 {
     public class CreatePositionCommandValidator : AbstractValidator<CreatePositionCommand>
     {

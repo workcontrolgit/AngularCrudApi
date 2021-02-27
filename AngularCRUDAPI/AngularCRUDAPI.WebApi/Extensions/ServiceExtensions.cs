@@ -8,7 +8,7 @@ using System.IO;
 using System.Reflection;
 using System.Text.Json;
 
-namespace AngularCRUDAPI.WebApi.Extensions
+namespace AngularCrudApi.WebApi.Extensions
 {
     public static class ServiceExtensions
     {
@@ -20,7 +20,7 @@ namespace AngularCRUDAPI.WebApi.Extensions
                 c.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Version = "v1",
-                    Title = "Clean Architecture - AngularCRUDAPI.WebApi",
+                    Title = "Clean Architecture - AngularCrudApi.WebApi",
                     Description = "This Api will be responsible for overall data distribution and authorization.",
                     Contact = new OpenApiContact
                     {

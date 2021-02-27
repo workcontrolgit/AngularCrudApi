@@ -4,42 +4,49 @@
         <name>AngularCrudApi.WebApi</name>
     </assembly>
     <members>
-        <member name="M:AngularCRUDAPI.WebApi.Controllers.v1.EmployeesController.Get(AngularCRUDAPI.Application.Features.Employees.Queries.GetEmployees.GetEmployeesQuery)">
+        <member name="M:AngularCrudApi.WebApi.Controllers.v1.EmployeesController.Get(AngularCrudApi.Application.Features.Employees.Queries.GetEmployees.GetEmployeesQuery)">
             <summary>
             GET: api/controller
             </summary>
             <param name="filter"></param>
             <returns></returns>
         </member>
-        <member name="M:AngularCRUDAPI.WebApi.Controllers.v1.PositionsController.Get(AngularCRUDAPI.Application.Features.Positions.Queries.GetPositions.GetPositionsQuery)">
+        <member name="M:AngularCrudApi.WebApi.Controllers.v1.PositionsController.Get(AngularCrudApi.Application.Features.Positions.Queries.GetPositions.GetPositionsQuery)">
             <summary>
             GET: api/controller
             </summary>
             <param name="filter"></param>
             <returns></returns>
         </member>
-        <member name="M:AngularCRUDAPI.WebApi.Controllers.v1.PositionsController.Get(System.Guid)">
+        <member name="M:AngularCrudApi.WebApi.Controllers.v1.PositionsController.Get(System.Guid)">
             <summary>
             GET api/controller/5
             </summary>
             <param name="id"></param>
             <returns></returns>
         </member>
-        <member name="M:AngularCRUDAPI.WebApi.Controllers.v1.PositionsController.Post(AngularCRUDAPI.Application.Features.Positions.Commands.CreatePosition.CreatePositionCommand)">
+        <member name="M:AngularCrudApi.WebApi.Controllers.v1.PositionsController.Post(AngularCrudApi.Application.Features.Positions.Commands.CreatePosition.CreatePositionCommand)">
             <summary>
             POST api/controller
             </summary>
             <param name="command"></param>
             <returns></returns>
         </member>
-        <member name="M:AngularCRUDAPI.WebApi.Controllers.v1.PositionsController.AddMock(AngularCRUDAPI.Application.Features.Positions.Commands.CreatePosition.InsertMockPositionCommand)">
+        <member name="M:AngularCrudApi.WebApi.Controllers.v1.PositionsController.AddMock(AngularCrudApi.Application.Features.Positions.Commands.CreatePosition.InsertMockPositionCommand)">
             <summary>
             Bulk insert fake data by specifying number of rows
             </summary>
             <param name="command"></param>
             <returns></returns>
         </member>
-        <member name="M:AngularCRUDAPI.WebApi.Controllers.v1.PositionsController.Put(System.Guid,AngularCRUDAPI.Application.Features.Positions.Commands.UpdatePosition.UpdatePositionCommand)">
+        <member name="M:AngularCrudApi.WebApi.Controllers.v1.PositionsController.Paged(AngularCrudApi.Application.Features.Positions.Queries.GetPositions.PagedPositionsQuery)">
+            <summary>
+            Support Angular 11 CRUD story on Medium
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AngularCrudApi.WebApi.Controllers.v1.PositionsController.Put(System.Guid,AngularCrudApi.Application.Features.Positions.Commands.UpdatePosition.UpdatePositionCommand)">
             <summary>
             PUT api/controller/5
             </summary>
@@ -47,7 +54,7 @@
             <param name="command"></param>
             <returns></returns>
         </member>
-        <member name="M:AngularCRUDAPI.WebApi.Controllers.v1.PositionsController.Delete(System.Guid)">
+        <member name="M:AngularCrudApi.WebApi.Controllers.v1.PositionsController.Delete(System.Guid)">
             <summary>
             DELETE api/controller/5
             </summary>

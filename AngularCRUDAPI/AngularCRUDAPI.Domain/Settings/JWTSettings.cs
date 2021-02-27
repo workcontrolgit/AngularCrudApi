@@ -1,5 +1,5 @@
 ﻿
-namespace AngularCRUDAPI.Domain.Settings
+namespace AngularCrudApi.Domain.Settings
 {
     public class JWTSettings
     {
