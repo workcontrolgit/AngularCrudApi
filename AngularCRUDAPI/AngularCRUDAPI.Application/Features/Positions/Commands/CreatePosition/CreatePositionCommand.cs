@@ -11,8 +11,8 @@ namespace AngularCrudApi.Application.Features.Positions.Commands.CreatePosition
 {
     public partial class CreatePositionCommand : IRequest<Response<Guid>>
     {
-        public string PositionTitle { get; set; }
         public string PositionNumber { get; set; }
+        public string PositionTitle { get; set; }
         public string PositionDescription { get; set; }
         public decimal PositionSalary { get; set; }
     }
