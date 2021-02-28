@@ -11,9 +11,10 @@ namespace AngularCrudApi.Application.Features.Positions.Commands.UpdatePosition
     public class UpdatePositionCommand : IRequest<Response<Guid>>
     {
         public Guid Id { get; set; }
-        public string Title { get; set; }
-        public string Description { get; set; }
-        public decimal Salary { get; set; }
+        public string PositionNumber { get; set; }
+        public string PositionTitle { get; set; }
+        public string PositionDescription { get; set; }
+        public decimal PositionSalary { get; set; }
         public class UpdatePositionCommandHandler : IRequestHandler<UpdatePositionCommand, Response<Guid>>
         {
             private readonly IPositionRepositoryAsync _positionRepository;
@@ -31,9 +32,10 @@ namespace AngularCrudApi.Application.Features.Positions.Commands.UpdatePosition
                 }
                 else
                 {
-                    position.PositionTitle = command.Title;
-                    position.PositionSalary = command.Salary;
-                    position.PositionDescription = command.Description;
+                    position.PositionNumber = command.PositionNumber;
+                    position.PositionTitle = command.PositionTitle;
+                    position.PositionSalary = command.PositionSalary;
+                    position.PositionDescription = command.PositionDescription;
                     await _positionRepository.UpdateAsync(position);
                     return new Response<Guid>(position.Id);
                 }
