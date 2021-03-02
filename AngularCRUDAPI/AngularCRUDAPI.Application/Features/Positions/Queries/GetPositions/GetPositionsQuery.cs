@@ -15,6 +15,7 @@ namespace AngularCrudApi.Application.Features.Positions.Queries.GetPositions
     {
         public string PositionNumber { get; set; }
         public string PositionTitle { get; set; }
+        public string PositionDescription { get; set; }
     }
 
     public class GetAllPositionsQueryHandler : IRequestHandler<GetPositionsQuery, PagedResponse<IEnumerable<Entity>>>

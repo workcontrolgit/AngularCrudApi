@@ -40,7 +40,7 @@ namespace AngularCrudApi.Application.Features.Positions.Queries.GetPositions
             var validFilter = new GetPositionsQuery();
 
             // Draw map to PageNumber
-            validFilter.PageNumber = request.Draw;
+            validFilter.PageNumber = (request.Start/ request.Length) + 1;
             // Length map to PageSize
             validFilter.PageSize = request.Length;
 
@@ -48,6 +48,9 @@ namespace AngularCrudApi.Application.Features.Positions.Queries.GetPositions
             var colOrder = request.Order[0];
             switch (colOrder.Column)
             {
+                //case 0:
+                //    validFilter.OrderBy = colOrder.Dir == "asc" ? "Id" : "Id DESC";
+                //    break;
                 case 0:
                     validFilter.OrderBy = colOrder.Dir == "asc" ? "PositionNumber" : "PositionNumber DESC";
                     break;
@@ -59,6 +62,9 @@ namespace AngularCrudApi.Application.Features.Positions.Queries.GetPositions
                 case 2:
                     validFilter.OrderBy = colOrder.Dir == "asc" ? "PositionDescription" : "PositionDescription DESC";
                     break;
+                case 3:
+                    validFilter.OrderBy = colOrder.Dir == "asc" ? "PositionSalary" : "PositionSalary DESC";
+                    break;
             }
 
             // Map Search > searchable columns
@@ -67,6 +73,7 @@ namespace AngularCrudApi.Application.Features.Positions.Queries.GetPositions
                 //limit to fields in view model
                 validFilter.PositionNumber = request.Search.Value;
                 validFilter.PositionTitle = request.Search.Value;
+                validFilter.PositionDescription = request.Search.Value;
             }
             if (string.IsNullOrEmpty(validFilter.Fields))
             {
