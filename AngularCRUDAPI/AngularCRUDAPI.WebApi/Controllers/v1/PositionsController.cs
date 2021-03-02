@@ -43,7 +43,6 @@ namespace AngularCrudApi.WebApi.Controllers.v1
         /// <param name="command"></param>
         /// <returns></returns>
         [HttpPost]
-        // [Authorize]
         public async Task<IActionResult> Post(CreatePositionCommand command)
         {
             return Ok(await Mediator.Send(command));
@@ -56,7 +55,6 @@ namespace AngularCrudApi.WebApi.Controllers.v1
         /// <returns></returns>
         [HttpPost]
         [Route("AddMock")]
-        // [Authorize]
         public async Task<IActionResult> AddMock(InsertMockPositionCommand command)
         {
             return Ok(await Mediator.Send(command));
@@ -69,7 +67,6 @@ namespace AngularCrudApi.WebApi.Controllers.v1
         /// <returns></returns>
         [HttpPost]
         [Route("Paged")]
-        // [Authorize]
         public async Task<IActionResult> Paged(PagedPositionsQuery query)
         {
             return Ok(await Mediator.Send(query));
@@ -83,7 +80,6 @@ namespace AngularCrudApi.WebApi.Controllers.v1
         /// <param name="command"></param>
         /// <returns></returns>
         [HttpPut("{id}")]
-        [Authorize]
         public async Task<IActionResult> Put(Guid id, UpdatePositionCommand command)
         {
             if (id != command.Id)
@@ -99,7 +95,6 @@ namespace AngularCrudApi.WebApi.Controllers.v1
         /// <param name="id"></param>
         /// <returns></returns>
         [HttpDelete("{id}")]
-        [Authorize]
         public async Task<IActionResult> Delete(Guid id)
         {
             return Ok(await Mediator.Send(new DeletePositionByIdCommand { Id = id }));

@@ -49,6 +49,7 @@ namespace AngularCrudApi.Infrastructure.Persistence.Repositories
         {
             var positionNumber = requestParameter.PositionNumber;
             var positionTitle = requestParameter.PositionTitle;
+            var positionDescription = requestParameter.PositionDescription;
 
             var pageNumber = requestParameter.PageNumber;
             var pageSize = requestParameter.PageSize;
@@ -66,7 +67,7 @@ namespace AngularCrudApi.Infrastructure.Persistence.Repositories
             recordsTotal = await result.CountAsync();
 
             // filter data
-            FilterByColumn(ref result, positionNumber, positionTitle);
+            FilterByColumn(ref result, positionNumber, positionTitle, positionDescription);
 
             // Count records after filter
             recordsFiltered = await result.CountAsync();
@@ -102,12 +103,18 @@ namespace AngularCrudApi.Infrastructure.Persistence.Repositories
             return (shapeData, recordsCount);
         }
 
-        private void FilterByColumn(ref IQueryable<Position> positions, string positionNumber, string positionTitle)
+        private void FilterByColumn(ref IQueryable<Position> positions, 
+            string positionNumber, 
+            string positionTitle,
+            string positionDescription
+            )
         {
             if (!positions.Any())
                 return;
 
-            if (string.IsNullOrEmpty(positionTitle) && string.IsNullOrEmpty(positionNumber))
+            if (string.IsNullOrEmpty(positionTitle) && 
+                string.IsNullOrEmpty(positionNumber) && 
+                string.IsNullOrEmpty(positionDescription))
                 return;
 
             var predicate = PredicateBuilder.New<Position>();
@@ -117,6 +124,9 @@ namespace AngularCrudApi.Infrastructure.Persistence.Repositories
 
             if (!string.IsNullOrEmpty(positionTitle))
                 predicate = predicate.Or(p => p.PositionTitle.Contains(positionTitle.Trim()));
+
+            if (!string.IsNullOrEmpty(positionDescription))
+                predicate = predicate.Or(p => p.PositionDescription.Contains(positionDescription.Trim()));
 
             positions = positions.Where(predicate);
         }
