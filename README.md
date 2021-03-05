@@ -1,1 +1,1 @@
-Backend for Angualar CRUD on Medium
+This repository is for Medium story [Angular 11 CRUD 100,000+ Rows](https://medium.com/scrum-and-coke/angular-11-crud-100-000-rows-d1db21afc31c)
