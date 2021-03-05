@@ -14,7 +14,6 @@ namespace AngularCrudApi.Infrastructure.Shared
             services.AddTransient<IDateTimeService, DateTimeService>();
             services.AddTransient<IEmailService, EmailService>();
             services.AddTransient<IMockService, MockService>();
-
         }
     }
 }

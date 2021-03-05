@@ -1,5 +1,4 @@
-﻿
-namespace AngularCrudApi.Domain.Enums
+﻿namespace AngularCrudApi.Domain.Enums
 {
     public enum Gender
     {

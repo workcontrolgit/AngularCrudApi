@@ -15,5 +15,4 @@ namespace AngularCrudApi.Application.Mappings
             CreateMap<CreatePositionCommand, Position>();
         }
     }
-
 }

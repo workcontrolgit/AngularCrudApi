@@ -1,5 +1,4 @@
-﻿
-namespace AngularCrudApi.Application.Enums
+﻿namespace AngularCrudApi.Application.Enums
 {
     public enum Roles
     {

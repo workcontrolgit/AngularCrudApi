@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
 
-
 namespace AngularCrudApi.WebApi.Controllers
 {
     [ApiController]

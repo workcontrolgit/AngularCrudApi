@@ -10,9 +10,11 @@ namespace AngularCrudApi.Application.Features.Positions.Commands.CreatePosition
     {
         public int RowCount { get; set; }
     }
+
     public class SeedPositionCommandHandler : IRequestHandler<InsertMockPositionCommand, Response<int>>
     {
         private readonly IPositionRepositoryAsync _positionRepository;
+
         public SeedPositionCommandHandler(IPositionRepositoryAsync positionRepository)
         {
             _positionRepository = positionRepository;

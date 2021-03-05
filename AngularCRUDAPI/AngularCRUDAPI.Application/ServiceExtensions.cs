@@ -2,7 +2,6 @@
 using AngularCrudApi.Application.Helpers;
 using AngularCrudApi.Application.Interfaces;
 using AngularCrudApi.Domain.Entities;
-using AutoMapper;
 using FluentValidation;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;

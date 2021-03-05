@@ -52,7 +52,6 @@ namespace AngularCrudApi.Infrastructure.Persistence.Repository
             return entity;
         }
 
-
         public async Task UpdateAsync(T entity)
         {
             _dbContext.Entry(entity).State = EntityState.Modified;
