@@ -28,6 +28,7 @@ namespace AngularCrudApi.Application.Helpers
             };
             return retString;
         }
+
         /// <summary>
         /// Get list of field names in the model class
         /// </summary>

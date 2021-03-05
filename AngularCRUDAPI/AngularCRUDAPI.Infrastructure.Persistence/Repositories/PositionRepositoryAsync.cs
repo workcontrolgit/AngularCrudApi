@@ -103,8 +103,8 @@ namespace AngularCrudApi.Infrastructure.Persistence.Repositories
             return (shapeData, recordsCount);
         }
 
-        private void FilterByColumn(ref IQueryable<Position> positions, 
-            string positionNumber, 
+        private void FilterByColumn(ref IQueryable<Position> positions,
+            string positionNumber,
             string positionTitle,
             string positionDescription
             )
@@ -112,8 +112,8 @@ namespace AngularCrudApi.Infrastructure.Persistence.Repositories
             if (!positions.Any())
                 return;
 
-            if (string.IsNullOrEmpty(positionTitle) && 
-                string.IsNullOrEmpty(positionNumber) && 
+            if (string.IsNullOrEmpty(positionTitle) &&
+                string.IsNullOrEmpty(positionNumber) &&
                 string.IsNullOrEmpty(positionDescription))
                 return;
 

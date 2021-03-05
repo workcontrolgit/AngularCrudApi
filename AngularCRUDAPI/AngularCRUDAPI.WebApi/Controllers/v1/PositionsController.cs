@@ -3,7 +3,6 @@ using AngularCrudApi.Application.Features.Positions.Commands.DeletePositionById;
 using AngularCrudApi.Application.Features.Positions.Commands.UpdatePosition;
 using AngularCrudApi.Application.Features.Positions.Queries.GetPositionById;
 using AngularCrudApi.Application.Features.Positions.Queries.GetPositions;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Threading.Tasks;
@@ -71,7 +70,6 @@ namespace AngularCrudApi.WebApi.Controllers.v1
         {
             return Ok(await Mediator.Send(query));
         }
-
 
         /// <summary>
         /// PUT api/controller/5

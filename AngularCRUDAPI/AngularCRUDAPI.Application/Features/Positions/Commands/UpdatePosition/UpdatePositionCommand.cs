@@ -15,13 +15,16 @@ namespace AngularCrudApi.Application.Features.Positions.Commands.UpdatePosition
         public string PositionTitle { get; set; }
         public string PositionDescription { get; set; }
         public decimal PositionSalary { get; set; }
+
         public class UpdatePositionCommandHandler : IRequestHandler<UpdatePositionCommand, Response<Guid>>
         {
             private readonly IPositionRepositoryAsync _positionRepository;
+
             public UpdatePositionCommandHandler(IPositionRepositoryAsync positionRepository)
             {
                 _positionRepository = positionRepository;
             }
+
             public async Task<Response<Guid>> Handle(UpdatePositionCommand command, CancellationToken cancellationToken)
             {
                 var position = await _positionRepository.GetByIdAsync(command.Id);

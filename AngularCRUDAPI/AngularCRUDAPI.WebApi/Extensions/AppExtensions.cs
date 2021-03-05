@@ -13,6 +13,7 @@ namespace AngularCrudApi.WebApi.Extensions
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "CleanArchitecture.AngularCrudApi.WebApi");
             });
         }
+
         public static void UseErrorHandlingMiddleware(this IApplicationBuilder app)
         {
             app.UseMiddleware<ErrorHandlerMiddleware>();

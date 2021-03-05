@@ -15,6 +15,7 @@ namespace AngularCrudApi.Application.Features.Positions.Queries.GetPositions
     {
         //strong type input parameters
         public int Draw { get; set; } //page number
+
         public int Start { get; set; } //Paging first record indicator. This is the start point in the current data set (0 index based - i.e. 0 is the first record).
         public int Length { get; set; } //page size
         public IList<Order> Order { get; set; } //Order by
@@ -40,7 +41,7 @@ namespace AngularCrudApi.Application.Features.Positions.Queries.GetPositions
             var validFilter = new GetPositionsQuery();
 
             // Draw map to PageNumber
-            validFilter.PageNumber = (request.Start/ request.Length) + 1;
+            validFilter.PageNumber = (request.Start / request.Length) + 1;
             // Length map to PageSize
             validFilter.PageSize = request.Length;
 
@@ -62,6 +63,7 @@ namespace AngularCrudApi.Application.Features.Positions.Queries.GetPositions
                 case 2:
                     validFilter.OrderBy = colOrder.Dir == "asc" ? "PositionDescription" : "PositionDescription DESC";
                     break;
+
                 case 3:
                     validFilter.OrderBy = colOrder.Dir == "asc" ? "PositionSalary" : "PositionSalary DESC";
                     break;

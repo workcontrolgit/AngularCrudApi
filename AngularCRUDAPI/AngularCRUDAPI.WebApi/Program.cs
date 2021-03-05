@@ -43,6 +43,7 @@ namespace AngularCrudApi.WebApi
             }
             host.Run();
         }
+
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
             .UseSerilog() //Uses Serilog instead of default .NET Logger

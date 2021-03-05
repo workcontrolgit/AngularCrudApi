@@ -1,5 +1,4 @@
-﻿
-namespace AngularCrudApi.WebApi.Models
+﻿namespace AngularCrudApi.WebApi.Models
 {
     public class Metadata
     {
